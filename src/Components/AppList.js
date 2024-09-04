@@ -16,7 +16,7 @@ const AppList = () => {
         }
         const response = await axios.get(url);
         setAppData(response.data);
-        // console.log(appData);-
+        // console.log(appData);
       } catch (err) {
         console.log("Some Error Found in Fetching :", err);
       }
@@ -34,10 +34,10 @@ const AppList = () => {
   return (
     <>
       <div id="appContainer">
-        {filteredData.map((item, index) => (
+        {filteredData.map((app, index) => (
           <div className="appBox" key={index}>
-            <img className="appImg" alt={item.name} src={item.url} />
-            <p className="appName">{item.name}</p>
+            <img className="appImg" alt={app.name} src={app.url} />
+            <p className="appName">{app.name}</p>
           </div>
         ))}
       </div>
