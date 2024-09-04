@@ -9,7 +9,7 @@ const AppList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let url = "http://localhost:3500/appDetails";
+        let url = "https://appstore-backend-kr6h.vercel.app/appDetails";
         if(category && category !== "All")
         {
           url +=`?category=${category}`;
