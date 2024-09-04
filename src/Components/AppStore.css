@@ -1,0 +1,80 @@
+*{
+  margin: 0px;
+  /* background-color: linear-gradient(to bottom, rgb(206, 224, 255),#4ea7ff) */
+}
+
+.App{
+    background-color: rgb(178, 204, 251);
+}
+
+#headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+}
+
+#heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#searchBox{
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+#categories{
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+}
+
+#appContainer{
+    /* background-color: aqua; */
+    height: 485px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,auto);
+    padding: auto;
+    overflow: auto;
+}
+
+.appBox{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:5px 5px darkgray;
+    background-color: white;
+    margin: auto;
+}
+
+.appImg{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.appName{
+    font-size: larger;
+    font-weight: bold;
+}
